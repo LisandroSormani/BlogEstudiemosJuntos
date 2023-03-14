@@ -4,58 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Mono|Muli">
+    <link rel="stylesheet" href="basics.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/ab056a6068.js" crossorigin="anonymous"></script>
     <title>Estudiemos Juntos</title>
 </head>
 <body>
     <header>
         <h1>Estudiemos Juntos</h1>
         <nav>
-            <ul id="nav-principal">
-                <li>Inicio</li>
-                <li>Sobre Mí</li>
-                <li>Contacto</li>
+            <ul id="nav-principal" class="list-none">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobremi.html">Sobre Mí</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><input type="text" placeholder="¿Qué quieres aprender HOY?" name="busqueda" id="busqueda"></li>
+                <li><button type="submit" id="ico-buscar"><i class="fa-solid fa-magnifying-glass"></i></button></li>
             </ul>
-            <form>
-                <input type="text" value="¿Qué quieres aprender HOY?">
-            </form>
-            <img src="logo-buscar.png" alt="logo buscar">
+            
+            <!-- Poner algo para cambiar de tema dia, a tema oscuro, Sol y Luna-->
         </nav>
     </header>
     <section>
-        <h3>¡¡Bienvenido!!</h3>
+        <h2>¡¡Bienvenido!!</h2>
         <p>
             Hoy estoy para ayudarte con tus estudios y quiero que lo hagamos juntos. Yo te ayudo con mi experiencia, a buscar, para que aprendas lo que quieras de una manera muy fácil.
             Solo te pido COMPROMISO!!! todo se logra con constancia y compromiso con nosotros mismos por eso quiero que aprendas a aser un estudiante ACTIVO.
             Si empezaste a estudiar para una matería o sobre algún tema interesante para tí como la programción crea un HORARIO que te ayude a guiarte y a progresar, así como lo hiciste en algún momento para las materias de la escuela.
         </p>
         <p>
-            <h6>Estudiemos Juntos</h6> es un sitio para ayudarte a aprender sobre las materias básicas de ingeniería y en específico ingeniería <b>Naval</b> de la UTN facultad regional de Buenos Aires. /*después agregas mas información*/
+            <h3>Estudiemos Juntos</h3> es un sitio para ayudarte a aprender sobre las materias básicas de ingeniería y en específico ingeniería <b>Naval</b> de la UTN facultad regional de Buenos Aires. <!--después agregas mas información-->
             Como todavía estamos en construcción te invito a agregar información que te sirvío para tu carrera.
         </p>
     </section>
     <section id="publicaciones-recientes">
         <hr>
-        <h4>Publicaion 1</h4>
+        <h4>Publicacion 1</h4>
         <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis possimus at officiis. Quibusdam ipsum fugit dicta beatae ipsa facilis eveniet ipsam a rerum iste? Eum asperiores rerum eaque quisquam sit.
         </p>
         <hr>
-        <h4>Publicaion 2</h4>
+        <h4>Publicacion 2</h4>
         <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis possimus at officiis. Quibusdam ipsum fugit dicta beatae ipsa facilis eveniet ipsam a rerum iste? Eum asperiores rerum eaque quisquam sit.
         </p>
         <hr>
-        <h4>Publicaion 3</h4>
+        <h4>Publicacion 3</h4>
         <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis possimus at officiis. Quibusdam ipsum fugit dicta beatae ipsa facilis eveniet ipsam a rerum iste? Eum asperiores rerum eaque quisquam sit.
         </p>
     </section>
     <aside>
         <div id="navegador secundario">
-            <ul id="nav-secundario-materias">
+            <ul id="nav-secundario-materias" class="list-none">
                 <li>Materias Básicas Difíciles</li>
-                <ul id="ul-materias-basicas-dificiles">
+                <ul id="ul-materias-basicas-dificiles" class="list-none">
                     <li>Análisis Matemático I</li>
                     <li>Algebra y Geometría Analítica</li>
                     <li>Física I</li>
@@ -65,14 +68,14 @@
                     <li>Física II</li>
                 </ul>
                 <li>Materias Básicas Fáciles</li>
-                <ul id="ul-materias-basicas-faciles">
+                <ul id="ul-materias-basicas-faciles" class="list-none">
                     <li>Sistemas de Representación</li>
                     <li>Ingeniería y Sociedad (CTS)</li>
                     <li>Legislación</li>
                     <li>Inglés Tecnico I, II</li>
                 </ul>
                 <li>Materias Específicas [Naval]</li>
-                <ul id="ul-materias-naval">
+                <ul id="ul-materias-naval" class="list-none">
                     <li>Introducción a Ingeniería Naval</li>
                     <li>Dibujo Naval</li>
                 </ul>
@@ -85,17 +88,17 @@
     <footer>
         <div id="formulario-contacto">
             <form>
-                <p>Email:</p><br>
-                <input type="email" placeholder="Email">
-                <p>Nombre y Apellido</p><br>
-                <input type="text" placeholder="Nombre y Apellido">
-                <p>¿Cuál duda tienes para mí?</p><br>
-                <input type="textarea" name="" id="">
+                <label>Email</label><br>
+                <input type="email" name="email" placeholder="Email"><br>
+                <label>Nombre y Apellido</label><br>
+                <input type="text" name="nombre-apellido" placeholder="Nombre y Apellido"><br>
+                <label>¿Cuál duda tienes para mí?</label><br>
+                <input type="textarea" name="duda" width="300px" placeholder="Escribi tu pregunta...">
             </form>
         </div>
         <div id="redes-sociales">
-            <h5>Sigueme en Redes</h5>
-            <ul>
+            <h4>Sigueme en Redes</h4>
+            <ul class="list-none">
                 <li><a href="instagram.com"><img src="logoinstagram.png" alt="logo instagram"></a></li>
                 <li><a href="tiktok.com"><img src="logotiktok.png" alt="logo tiktok"></a></li>
                 <p>Támbien te invito a mi comunidad de discord y <strong>Estudiemos Juntos</strong></p>
